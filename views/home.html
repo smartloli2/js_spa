@@ -1,0 +1,24 @@
+<div class = "home">
+    <h3>Введите слово или слова через запятую</h3>
+    <input type="text" value="dragon" id="input">
+    <button id="find" onclick = "(() => {findExamples()})()">Найти</button>
+    
+    <div id="result"></div>
+
+    <div id="bottom_bar" style="display: none;">
+        <button id="prev" onclick = "(() => {getPrevPage()})()">Предыдущие</button>
+        <span id="page" style="margin: 2em 1em;">0</span>
+        <button id="next" onclick = "(() => {getNextPage()})()">Следующие</button>
+    </div>
+</div>
+
+<style>
+    .home{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+    }
+</style>
+
